@@ -11,7 +11,7 @@ public class App {
 
         // Connect to MongoDB running in Docker
         try (MongoClient mongoClient =
-                     MongoClients.create("mongodb://localhost:27000")) {
+                     MongoClients.create("mongodb://mongo-dbserver")) {
 
             // Select the database
             MongoDatabase database = mongoClient.getDatabase("mydb");
